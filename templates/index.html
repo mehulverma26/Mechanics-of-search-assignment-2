@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}">
+</head>
+
+<body>
+    <h1>Image Search Engine</h1>
+
+    <form method="POST">
+        <input type="text" name="query" placeholder="Search images..." required>
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="results">
+        {% if results %}
+        {% for image_data in results %}
+        <div class="result-card">
+            <img src="{{ image_data['image'] }}" alt="Search result">
+            <p><strong>Title:</strong> {{ image_data['image'].get('caption')}}</p>
+            <p>
+                <a href="{{ image_data['image'] }}" target="_blank">View Source</a>
+            </p>
+        </div>
+        {% endfor %}
+        {% else %}
+        <p>No results found. Try another search!</p>
+        {% endif %}
+    </div>
+</body>
+
+</html>

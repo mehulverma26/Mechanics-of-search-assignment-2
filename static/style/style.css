@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+input {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result-card {
+    margin: 10px;
+    width: 220px;
+    text-align: center;
+}
+
+.result-card img {
+    width: 200px;
+    height: auto;
+}
