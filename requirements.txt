@@ -1,0 +1,6 @@
+requests
+opencv-python
+numpy
+beautifulsoup4
+flask
+python-dotenv
