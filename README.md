@@ -22,6 +22,11 @@ pip install -r requirements.txt
 
 [MobileNet-SSD_deploy.caffemodel](https://github.com/chuanqi305/MobileNet-SSD/blob/master/mobilenet_iter_73000.caffemodel)
 
+## Prerequisites
+1. Google API key (you can get this from the credential page)
+2. Google CX (can be taken if you make a search engine on google)
+3. Unsplash API key (have to create an app on the website for this as well)
+
 ## Running the program
 
 Run the [<b>v4(main).py</b>](https://github.com/mehulverma26/Mechanics-of-search-assignment-2/blob/main/v4%20(main).py) because that is most up to date code but I am including earlier versions of the code just in case anyone wants to study or take a reference from them otherwise it will be reminder for my journey leading up to the finalized version 😊
