@@ -20,10 +20,11 @@
         {% if results %}
         {% for image_data in results %}
         <div class="result-card">
-            <img src="{{ image_data['image'] }}" alt="Search result">
-            <p><strong>Title:</strong> {{ image_data['image'].get('caption')}}</p>
+            <img src="{{ image_data['url'] }}" alt="Search result">
+            <p><strong>Caption:</strong> {{ image_data['caption'] }}</p>
+            <p><strong>Detected Objects:</strong> {{ image_data['detected_objects'] | join(', ') }}</p>
             <p>
-                <a href="{{ image_data['image'] }}" target="_blank">View Source</a>
+                <a href="{{ image_data['source'] }}" target="_blank">View Source</a>
             </p>
         </div>
         {% endfor %}
@@ -31,6 +32,7 @@
         <p>No results found. Try another search!</p>
         {% endif %}
     </div>
+    <script>console.log("{{ results | tojson }}")</script>
 </body>
 
 </html>
