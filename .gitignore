@@ -1,4 +1,5 @@
 .env
 *.yaml
+*.docx
 CSC1121_Assignment_2.pdf
 metadata.json
