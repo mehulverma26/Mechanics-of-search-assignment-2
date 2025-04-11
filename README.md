@@ -23,9 +23,18 @@ pip install -r requirements.txt
 [MobileNet-SSD_deploy.caffemodel](https://github.com/chuanqi305/MobileNet-SSD/blob/master/mobilenet_iter_73000.caffemodel)
 
 ## Prerequisites
+
 1. Google API key (you can get this from the credential page)
 2. Google CX (can be taken if you make a search engine on google)
 3. Unsplash API key (have to create an app on the website for this as well)
+
+Keep these keys in a ' .env ' file. The .env should look somewhat like this:
+
+```.env
+GOOGLE_API_KEY=<replace with your api key>
+GOOGLE_CX=<replace with your api key>
+UNSPLASH_ACCESS_KEY=<replace with your api key>
+```
 
 ## Running the program
 
